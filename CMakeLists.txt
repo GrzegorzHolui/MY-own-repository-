@@ -13,17 +13,18 @@ include(External_GTest.cmake)
 
 # SRC
 include_directories(Include)
+include_directories(Source)
 include_directories(Test)
 
-add_executable(bakcyl_programowania  "Source/list.cpp" "main.cpp")
+add_executable(Pokaz_Main  "Source/list.cpp" "main.cpp")
 
- target_link_libraries(bakcyl_programowania 	${GTEST_MAIN_LIBRARY}
+ target_link_libraries(Pokaz_Main 	${GTEST_MAIN_LIBRARY}
                                                  ${GTEST_LIBRARY}
                                                  ${GMOCK_MAIN_LIBRARY}
                                                  ${GMOCK_LIBRARY})
 
-add_executable(bakcyl_programowania_UT "Test/test.cpp" "test.cpp" )
-target_link_libraries(bakcyl_programowania_UT 	${GTEST_MAIN_LIBRARY}
+add_executable(Wywolaj_Testy "Test/test.cpp" "test.cpp" )
+target_link_libraries(Wywolaj_Testy 	${GTEST_MAIN_LIBRARY}
                                        		${GTEST_LIBRARY}
                                        		${GMOCK_MAIN_LIBRARY}
                                        		${GMOCK_LIBRARY})
