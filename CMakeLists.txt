@@ -23,7 +23,7 @@ add_executable(Pokaz_Main  "Source/list.cpp" "main.cpp")
                                                  ${GMOCK_MAIN_LIBRARY}
                                                  ${GMOCK_LIBRARY})
 
-add_executable(Wywolaj_Testy "Test/test.cpp" "test.cpp" )
+add_executable(Wywolaj_Testy  "test.cpp" )
 target_link_libraries(Wywolaj_Testy 	${GTEST_MAIN_LIBRARY}
                                        		${GTEST_LIBRARY}
                                        		${GMOCK_MAIN_LIBRARY}
