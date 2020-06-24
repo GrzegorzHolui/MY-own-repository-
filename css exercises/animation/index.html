@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        @keyframes turn {
+            0% {
+                border-radius: 100px;
+            }
+
+            90% {
+                border-radius: 500px;
+                
+            }
+            100% {
+                border-radius: 0;
+            }
+        }
+
+        .square {
+            width: 20vh;
+            height: 20vh;
+            background-color: green;
+            animation-name: turn;
+            animation-duration: 5s;
+            animation-delay: 1s;
+                        
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="square"></div>
+</body>
+
+</html>

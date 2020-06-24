@@ -1,0 +1,28 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 219, 219)  ;
+}
+
+#name {
+    position: relative;
+    
+}
+#name::before {
+    display: block;
+    background-color: blueviolet;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: -50px;
+    transition: transform .5s linear;
+    will-change: transform;
+}
+
+#name:hover::before {
+    transform: translateX(-100px);
+}
