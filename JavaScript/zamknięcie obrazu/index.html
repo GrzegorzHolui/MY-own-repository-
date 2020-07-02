@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            min-height: 100vh;
+            margin: 0;
+        }
+
+         div#first {
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            margin: 0;
+            background-color: rgb(9, 66, 73);
+            width: 10px;
+            height: 100vh;
+            transition: width 2.5s linear;
+        } 
+
+        div#second {
+            position: fixed;
+            top: 0; 
+            right: 0; 
+            margin: 0;
+            background-color: powderblue;
+            width: 10px;
+            height: 100vh;
+            transition: width 2.5s linear;
+        }
+        /* div:hover {
+            width: 100vw;
+        } */
+    </style>
+</head>
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <script src="main.js"></script>
+</body>
+</html>
