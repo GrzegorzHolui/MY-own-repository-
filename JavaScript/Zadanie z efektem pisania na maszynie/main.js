@@ -13,6 +13,7 @@ let firstIndex = 0;
 let secondIndex = 0;
 let Enough = true;
 const addLetter = () => {
+
     spnText.textContent += txt[firstIndex][secondIndex];
     secondIndex++;
     if (secondIndex === txt[firstIndex].length) {
@@ -20,7 +21,7 @@ const addLetter = () => {
         secondIndex = 0;
         Enough = false;
         setTimeout(() => {
-            if (firstIndex == 3) {
+            if (firstIndex == txt.length) {
                 Enough = false;
             } else {
                 spnText.textContent = '';
@@ -32,10 +33,13 @@ const addLetter = () => {
     if (Enough) {
         setTimeout(() => {
             addLetter();
-        }, 200)
+        }, 100)
     }
 }
-addLetter(); //pierwsze wywołanie
+setTimeout(() => {
+    addLetter();
+}, 1000)
+//pierwsze wywołanie
 // Animacja kursora (zostaw bez zmian)
 const cursorAnimation = () => {
     spnCursor.classList.toggle('active');
