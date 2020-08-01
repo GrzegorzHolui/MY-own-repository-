@@ -1,3 +1,8 @@
+({
+    plugins: ['jsdom-quokka-plugin'],
+    // jsdom: {html: `<div id="test">Hello</div>`}
+})
+
 const slideList = [{
     img: "images/img1.jpg",
     text: 'Pierwszy tekst'
@@ -56,3 +61,4 @@ window.addEventListener("keydown", (e) => {
         //amountToChangeImg = 0;
     }
 })
+
